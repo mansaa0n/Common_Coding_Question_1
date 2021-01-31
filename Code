@@ -1,0 +1,20 @@
+def SumUp2Number(arr, S):
+
+    dic = {}
+    temp = arr
+    i = 0
+    while temp:
+        v = S - temp[i]
+        x = temp[i]
+        del temp[i]
+        if v in temp:
+            dic[x] = v
+    print(dic)
+  
+
+
+
+a = [1,2,3]
+
+SumUp2Number(a, 5)
+
